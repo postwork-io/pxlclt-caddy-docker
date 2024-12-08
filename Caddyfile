@@ -12,5 +12,5 @@ pxlct.com {
 
 # authentik
 auth.pxlclt.com {
-  reverse_proxy https://authentik:5000
+  reverse_proxy http://portainer:5000
 }
