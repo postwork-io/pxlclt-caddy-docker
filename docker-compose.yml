@@ -21,7 +21,7 @@ services:
     build: .
     restart: unless-stopped
     volumes:
-      - ${PWD}:/etc/caddy/Caddyfile
+      - ./Caddyfile:/etc/caddy/Caddyfile
       - ${CADDY_DATA_PATH}:/data # Optional
       - ${CADDY_CONFIG_PATH}:/config # Optional
     depends_on:
