@@ -20,8 +20,8 @@ services:
     restart: unless-stopped
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
-      - ${CADDY_DATA_PATH}:/data # Optional
-      - ${CADDY_CONFIG_PATH}:/config # Optional
+      - ${CADDY_DATA_PATH}:/data
+      - ${CADDY_CONFIG_PATH}:/config
     depends_on:
       - tailscale-caddy
     network_mode: service:tailscale-caddy
