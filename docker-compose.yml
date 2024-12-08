@@ -3,7 +3,7 @@ version: "3.7"
 services:
   tailscale-caddy:
     image: tailscale/tailscale:latest
-    hostname: tailscale-nginx
+    hostname: tailscale-caddy
     environment:
       - TS_AUTHKEY=${TAILSCALE_AUTHKEY}
       - TS_EXTRA_ARGS=--advertise-tags=tag:container
@@ -27,3 +27,5 @@ services:
     depends_on:
       - tailscale-caddy
     network_mode: service:tailscale-caddy
+    environment:
+      - CF_API_TOKEN:${CF_API_TOKEN}
