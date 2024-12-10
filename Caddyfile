@@ -6,7 +6,7 @@
 }
 
 # root
-pxlct.com {
+pxlclt.com {
   redir https://auth.pxlclt.com
 }
 
