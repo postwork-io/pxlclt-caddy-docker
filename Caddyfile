@@ -10,7 +10,7 @@ pxlct.com {
   redir https://auth.pxlclt.com
 }
 
-# authentik
+# authentik slight comment
 auth.pxlclt.com {
   reverse_proxy http://portainer:5000
 }
