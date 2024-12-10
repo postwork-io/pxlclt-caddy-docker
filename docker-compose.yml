@@ -16,7 +16,8 @@ services:
       - sys_module
     restart: unless-stopped
   caddy:
-    build: .
+    image: caddy-cloudflare:latest
+    #build: .
     restart: unless-stopped
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
